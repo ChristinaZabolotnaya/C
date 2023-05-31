@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a, b, c;
+    cin >> a >> b >> c;
+    
+    if (a == b && b == c) { // Треугольник со сторонами а, b, c является равносторонним
+        cout << "True";
+    } 
+    
+    else {
+        cout << "False";
+    }
+    
+    return 0;
+}

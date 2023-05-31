@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    int n, seconds;
+    
+    cout << "Введите количество секунд: ";
+    cin >> n;
+    
+    seconds = n % 60;
+    
+    cout << "Количество секунд с начала последней минуты: " << seconds << endl;
+    
+    return 0;
+}

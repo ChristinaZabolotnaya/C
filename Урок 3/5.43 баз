@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+int n; 
+double salary, total = 0; 
+cout << "Введите количество сотрудников: ";
+cin >> n;
+for (int i = 1; i <= n; i++) {
+cout << "Введите зарплату для " << i << "-го сотрудника: ";
+cin >> salary;
+total += salary;
+}

@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    int hundreds, n;
+    
+    cout << "Введите число больше 999: ";
+    cin >> n;
+    
+    hundreds = (n / 100) % 10;
+    
+    cout << "Цифра в разряде сотен: " << hundreds << endl;
+    
+    return 0;
+}

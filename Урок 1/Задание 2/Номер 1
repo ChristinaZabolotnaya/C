@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double a, P;
+    
+    cout << "Введите сторону квадрата: ";
+    cin >> a;
+    
+    P = 4 * a;
+    
+    cout << "Периметр квадрата: " << P << endl;
+    
+    return 0;
+}
+    

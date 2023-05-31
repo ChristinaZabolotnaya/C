@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+   double x, y;
+
+   cout << "Введите значение x: ";
+   cin >> x;
+
+   y = 7 * pow(x, 2) - 3 * x + 6;
+
+   cout << "Значение функции y = 7*x^2 - 3*x + 6 равно " << y << endl;
+
+   return 0;
+}

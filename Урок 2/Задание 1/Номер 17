@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   
+    int n;
+    cin >> n;
+   
+    if (n % 2 != 0 && n >= 100 && n <=999) { // Данное число является нечетным трехзначным
+        cout << "True";
+    } 
+    
+    else {
+        cout << "False";
+    }
+    
+    return 0;
+}

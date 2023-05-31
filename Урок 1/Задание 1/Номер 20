@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+   double r, c, area;
+
+   cout << "Введите значение радиуса окружности: ";
+   cin >> r;
+
+   c = 2 * M_PI * r;
+   area = M_PI * pow(r, 2);
+
+   cout << "Длина окружности равна " << c << endl;
+   cout << "Площадь круга равна " << area << endl;
+
+   return 0;
+}

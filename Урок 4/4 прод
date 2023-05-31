@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    double a11, a12, a21, a22;
+    cout << "Введите элементы матрицы A (размер 2*2): ";
+    cin >> a11 >> a12 >> a21 >> a22;
+    double discriminant = pow(a11-a22, 2) + 4*a12*a21;
+    if (discriminant < 0) {
+        cout << "Уравнение не имеет решения" << endl;
+    } else {
+        double lambda1 = (a11+a22+sqrt(discriminant))/2;
+        double lambda2 = (a11+a22-sqrt(discriminant))/2;
+        cout << "Собственные числа: " << lambda1 << " и " << lambda2 << endl;
+    }
+    return 0;
+}

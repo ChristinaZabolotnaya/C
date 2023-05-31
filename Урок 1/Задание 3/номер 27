@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    int k, dayOfWeek;
+    
+    cout << "Введите номер дня в году (от 1 до 365): ";
+    cin >> k;
+    
+    dayOfWeek = (k + 5) % 7; // +5, так как 1 января - суббота
+    
+    if (dayOfWeek == 0) dayOfWeek = 7; // чтобы воскресенье было с номером 7
+    
+    cout << "Номер дня недели: " << dayOfWeek << endl;
+    
+    return 0;
+}

@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    int A, B, segments;
+    
+    cout << "Введите два целых положительных числа (A>B):" << endl;
+    cout << "A = ";
+    cin >> A;
+    
+    cout << "B = ";
+    cin >> B;
+    
+    segments = A/B;
+    
+    cout << "Количество отрезков В, размещенных на отрезке А: " << segments << endl;
+    
+    return 0;
+}

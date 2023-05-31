@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+   
+    double a, b, x;
+    
+    cout << "Введите значение a: ";
+    cin >> a;
+    
+    cout << "Введите значение b: ";
+    cin >> b;
+    
+    x = 3.56*pow(a+b,2) - 5.8*pow(b,2) + 3.8*a - 1.5;
+    
+    cout << "x = " << x << endl;
+    
+    return 0;
+}

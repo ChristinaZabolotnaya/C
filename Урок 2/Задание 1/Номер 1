@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   
+    int a;
+    cin >> a;
+   
+    if (a > 0) { // Число А является положительным
+        cout << "True";
+    } 
+    
+    else {
+        cout << "False";
+    }
+    
+    return 0;
+}

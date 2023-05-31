@@ -1,0 +1,38 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    int x, y;
+    cin >> x;
+    
+    switch (x) {
+         case 2:
+            y = 28;
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            y = 30;
+            break;
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            y = 31;
+            break;
+        default:
+            cout << "ошибка";
+            return 0;
+    }
+    
+    cout << y;
+    
+    return 0;
+}

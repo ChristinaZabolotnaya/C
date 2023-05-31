@@ -1,0 +1,39 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+
+    int n;
+    double v;
+
+    cin >> n >> v;
+    
+    switch(n) {
+        case 1:
+            cout << "R1 = " << v * sqrt(3) / 6 << endl;
+            cout << "R2 = " << v * sqrt(3) / 3 << endl;
+            cout << "S = " << v * v * sqrt(3) / 4 << endl;
+            break;
+        case 2:
+            cout << "a = " << v * 6 / sqrt(3) << endl;
+            cout << "R2 = " << v * 2 << endl;
+            cout << "S = " << pow(v, 2) * sqrt(3) / 3 << endl;
+            break;
+        case 3:
+            cout << "a = " << v * sqrt(3) / 3 << endl;
+            cout << "R1 = " << v / 2 << endl;
+            cout << "S = " << pow(v, 2) * sqrt(3) / 4 << endl;
+            break;
+        case 4:
+            cout << "a = " << sqrt(v * 4 / sqrt(3)) << endl;
+            cout << "R1 = " << sqrt(3) * sqrt(v) / 6 << endl;
+            cout << "R2 = " << sqrt(3) * sqrt(v) / 3 << endl;
+            break;
+        default:
+            cout << "Некорректно" << endl;
+    }
+
+    return 0;
+}

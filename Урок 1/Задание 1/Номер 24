@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    int population;
+    double area, density;
+    
+    cout << "Введите значение population: ";
+    cin >> population;
+    
+    cout << "Введите знаечние area: ";
+    cin >> area;
+    
+    density = population / area;
+    
+    cout << "Population density = " << density << endl;
+    
+    return 0;
+}

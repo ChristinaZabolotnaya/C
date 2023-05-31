@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    double a, b, c, volume, lateral_area;
+    
+    cout << "Введите длину стороны a: ";
+    cin >> a;
+    
+    cout << "Введите длину стороны b: ";
+    cin >> b;
+    
+    cout << "Введите длину стороны c: ";
+    cin >> c;
+    
+    volume = a*b*c; // вычисляем объем
+    lateral_area = 2*(a*b + b*c + a*c); // вычисляем площадь боковой поверхности
+    
+    cout << "Volume = " << volume << endl;
+    cout << "Lateral area = " << lateral_area << endl;
+    
+    return 0;
+}

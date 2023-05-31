@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double a, b, sum, diff, prod, quot;
+    
+    cout << "Введите два ненулевых числа: ";
+    cin >> a >> b;
+    
+    sum = pow(a, 2) + pow(b, 2);
+    diff = pow(a, 2) - pow(b, 2);
+    prod = pow(a * b, 2);
+    quot = pow(a, 2) / pow(b, 2);
+    
+    cout << "Сумма квадратов: " << sum << endl;
+    cout << "Разность квадратов: " << diff << endl;
+    cout << "Произведение квадратов: " << prod << endl;
+    cout << "Частное квадратов: " << quot << endl;
+    
+    return 0;
+}

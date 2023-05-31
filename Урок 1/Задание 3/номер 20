@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    int n, hours;
+    
+    cout << "Введите количество секунд: ";
+    cin >> n;
+    
+    hours = n / 3600;
+    
+    cout << "Количество полных часов: " << hours << endl;
+    
+    return 0;
+}

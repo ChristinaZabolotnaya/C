@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    const double g = 9.8;
+    double V, a, L;
+    
+    cout << "Введите начальную скорость V: ";
+    cin >> V;
+    
+    cout << "Введите угол a, под которым тело брошено (в радианах): ";
+    cin >> a;
+    
+    L = (pow(V, 2) * sin(2*a))/g;
+    
+    cout << "Дальность полета тела: " << L << " м" << endl;
+    
+    return 0;
+}

@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double H, T, S, U;
+    const double g = 9.81;
+
+    cout << "Введите высоту самолета H: ";
+    cin >> H;
+
+    cout << "Введите скорость самолета U: ";
+    cin >> U;
+
+    T = sqrt(2 * H / g);
+    S = U * T;
+
+    cout << "Расстояние приближения к объекту S: " << S << endl;
+
+    return 0;
+}

@@ -1,0 +1,49 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+
+    int n;
+    double v, a, c, h, S;
+    
+    cin >> n >> v;
+    
+    switch(n) {
+        case 1:
+            a = v;
+            c = a * sqrt(2);
+            h = c / 2;
+            S = c * h / 2;
+            break;
+        case 2:
+            c = v;
+            a = c / sqrt(2);
+            h = c / 2;
+            S = c * h / 2;
+            break;
+        case 3:
+            h = v;
+            c = h * 2;
+            a = c / sqrt(2);
+            S = c * h / 2;
+            break;
+        case 4:
+            S = v;
+            c = sqrt(2 * S);
+            a = c / sqrt(2);
+            h = c / 2;
+            break;
+        default:
+            cout << "Некорректно" << endl;
+            return 0;
+    }
+    
+    cout << "Катет -  " << a << endl;
+    cout << "Гипотенуза - " << c << endl;
+    cout << "Высота - " << h << endl;
+    cout << "Площадь - " << S << endl;
+    
+    return 0;
+}

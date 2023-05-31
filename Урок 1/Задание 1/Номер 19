@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath> 
+using namespace std;
+
+int main() {
+   double a, volume, area;
+
+   cout << "Введите значение длины ребра куба: ";
+   cin >> a;
+
+   volume = pow(a, 3);
+   area = 6 * pow(a, 2);
+
+   cout << "Объем куба равен " << volume << endl;
+   cout << "Площадь боковой поверхности куба равна " << area << endl;
+
+   return 0;
+}

@@ -1,0 +1,122 @@
+#include <iostream>
+using namespace std;
+
+// Ю -  Y В - V 
+
+int main() {
+    char orient;
+    int n1, n2;
+    cin >> orient;
+    cin >> n1 >> n2;
+    
+    switch(orient) {
+        case 'C':
+            if(n1 == -1) {
+                if(n2 == -1)
+                    cout << "V" << endl;
+                else if(n2 == 1)
+                    cout << "Y" << endl;
+                else
+                    cout << "3" << endl;
+            }
+            else if(n1 == 1) {
+                if(n2 == -1)
+                    cout << "З" << endl;
+                else if(n2 == 1)
+                    cout << "Y" << endl;
+                else
+                    cout << "V" << endl;
+            }
+            else {
+                if(n2 == -1)
+                    cout << "Y" << endl;
+                else if(n2 == 1)
+                    cout << "V" << endl;
+                else
+                    cout << "З" << endl;
+            }
+            break;
+        case '3':
+            if(n1 == -1) {
+                if(n2 == -1)
+                    cout << "Y" << endl;
+                else if(n2 == 1)
+                    cout << "V" << endl;
+                else
+                    cout << "C" << endl;
+            }
+            else if(n1 == 1) {
+                if(n2 == -1)
+                    cout << "З" << endl;
+                else if(n2 == 1)
+                    cout << "Y" << endl;
+                else
+                    cout << "V" << endl;
+            }
+            else {
+                if(n2 == -1)
+                    cout << "V" << endl;
+                else if(n2 == 1)
+                    cout << "C" << endl;
+                else
+                    cout << "Y" << endl;
+            }
+            break;
+        case 'Y':
+            if(n1 == -1) {
+                if(n2 == -1)
+                    cout << "V" << endl;
+                else if(n2 == 1)
+                    cout << "C" << endl;
+                else
+                    cout << "3" << endl;
+            }
+            else if(n1 == 1) {
+                if(n2 == -1)
+                    cout << "З" << endl;
+                else if(n2 == 1)
+                    cout << "C" << endl;
+                else
+                    cout << "V" << endl;
+            }
+            else {
+                if(n2 == -1)
+                    cout << "C" << endl;
+                else if(n2 == 1)
+                    cout << "З" << endl;
+                else
+                    cout << "3" << endl;
+            }
+            break;
+        case 'V':
+            if(n1 == -1) {
+                if(n2 == -1)
+                    cout << "Y" << endl;
+                else if(n2 == 1)
+                    cout << "З" << endl;
+                else
+                    cout << "C" << endl;
+            }
+            else if(n1 == 1) {
+                if(n2 == -1)
+                    cout << "3" << endl;
+                else if(n2 == 1)
+                    cout << "Y" << endl;
+                else
+                    cout << "З" << endl;
+            }
+            else {
+                if(n2 == -1)
+                    cout << "З" << endl;
+                else if(n2 == 1)
+                    cout << "Y" << endl;
+                else
+                    cout << "Y" << endl;
+            }
+            break;
+        default:
+            cout << "некорректно" << endl;
+            return 0;
+    }
+    return 0;
+}

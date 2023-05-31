@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+    double price;
+    const int MAX_WEIGHT = 1000;
+    const int STEP = 50;
+    cout << "Введите стоимость 1 кг сыра: ";
+    cin >> price;
+    for (int weight = STEP; weight <= MAX_WEIGHT; weight += STEP) {
+        double cost = weight * price / 1000;
+        cout << weight << " г сыра стоят " << cost << " руб." << endl;
+    }
+    return 0;
+}

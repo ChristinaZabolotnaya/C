@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    int n, d, e, f, m;
+    
+    cout << "Введите трехзначное число: ";
+    cin >> n;
+    
+    d = n / 100;
+    e = (n / 10) % 10;
+    f = n % 10;
+    m = e * 100 + d * 10 + f;
+    
+    cout << "Число после перестановки цифр: " << m << endl;
+    
+    return 0;
+}

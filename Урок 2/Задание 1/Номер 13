@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   
+    int a, b, c;
+    cin >> a >> b >> c;
+    
+    if (a > 0 || b > 0 || c > 0) { // Хотя бы одно из чисел А, В, С положительное
+        cout << "True";
+    } 
+    
+    else {
+        cout << "False";
+    }
+    
+    return 0;
+}

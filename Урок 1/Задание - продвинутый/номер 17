@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double v, V, me, h, A;
+    
+    me = 9.1e-31; 
+    h = 6.626e-34;
+    
+    cout << "Введите частоту фотона - Гц: ";
+    cin >> v;
+    
+    cout << "Введите скорость электрона на выходе - м/с: ";
+    cin >> V;
+
+    A = (h * v < me * V * V / 2) ? 0 : h * v - me * V * V / 2; 
+    
+    // тернарный оператор
+    
+    cout << "Работа выхода электрона: " << A << " Дж" << endl;
+
+    return 0;
+}

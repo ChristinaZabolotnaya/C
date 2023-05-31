@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+
+    double a, b, c, perimeter;
+
+    cout << "Введите значение a: ";
+    cin >> a;
+
+    cout << "Введите значение b: ";
+    cin >> b;
+
+    c = sqrt(a * a + b * b);
+    perimeter = a + b + c;
+
+    cout << "Perimeter = " << perimeter << endl;
+
+    return 0;
+}

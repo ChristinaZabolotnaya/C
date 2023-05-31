@@ -1,0 +1,37 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double H, V, a, t, x, y;
+    const double g = 9.81;
+
+    cout << "Введите высоту скалы H: ";
+    cin >> H;
+
+    cout << "Введите начальную скорость V: ";
+    cin >> V;
+
+    cout << "Введите угол a (в градусах): ";
+    cin >> a;
+    
+    a = a * M_PI / 180; 
+
+    cout << "Введите время t: ";
+    cin >> t;
+
+    x = V * t * cos(a);
+    y = H + V * t * sin(a) - g * pow(t, 2) / 2;
+
+    if (y < 0) {
+        y = 0;
+        x = V * sqrt((2 * H) / g);
+    }
+
+    cout << "Высота от подножия скалы x: " << x << endl;
+    cout << "Расстояние от края обрыва y: " << y << endl;
+
+    return 0;
+}

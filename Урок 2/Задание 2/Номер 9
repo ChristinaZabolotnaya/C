@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    double a, b;
+    cin >> a >> b;
+    
+    if (a > b) {
+        double temp;
+        temp = a;
+        a = b;
+        b = temp;
+    }
+    
+    cout << "A -  " << a << endl;
+    cout << "B -  " << b << endl;
+    
+    return 0;
+}

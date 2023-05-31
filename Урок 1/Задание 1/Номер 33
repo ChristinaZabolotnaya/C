@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    double a, b, perimeter, diagonal;
+    
+    cout << "Введите длину стороны a: ";
+    cin >> a;
+    
+    cout << "Введите длину стороны b: ";
+    cin >> b;
+    
+    perimeter = 2*a + 2*b; // вычисляем периметр
+    diagonal = sqrt(a*a + b*b); // вычисляем диагональ
+    
+    cout << "Perimeter = " << perimeter << endl;
+    cout << "Diagonal = " << diagonal << endl;
+    
+    return 0;
+}

@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double a, b, c, pB, pC;
+    cin >> a >> b >> c;
+   
+    pB= abs(b - a);
+    pC = abs(c - a);
+    
+    if (pB < pC) {
+        cout << "В ближе к А " << pB;
+    } 
+    else {
+        cout << "С ближе к А " << pC;
+    }
+    
+    return 0;
+}

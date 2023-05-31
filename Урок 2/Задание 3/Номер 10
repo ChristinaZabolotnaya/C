@@ -1,0 +1,74 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+// Ю - К, З - Z
+
+int main() {
+    
+    char c;
+    int n;
+    cin >> c >> n;
+    
+    switch(c) {
+        case 'C':
+            if(n == 0) {
+                cout << "C";
+            } 
+            else {
+                if(n == 1) {
+                    cout << "Z";
+                }
+                else if(n == -1) {
+                    cout << "B";
+                }
+            }
+            break;
+        case 'Z':
+            if(n == 0) {
+                cout << "Z";
+            } 
+            else {
+                if(n == 1) {
+                    cout << "K";
+                }
+                else if(n == -1) {
+                    cout << "C";
+                }
+            }
+            break;
+        case 'K':
+            if(n == 0) {
+                cout << "K";
+            }   
+            else {
+                if(n == 1) {
+                    cout << "B";
+                } 
+                else {
+                    if(n == -1) {
+                    cout << "Z";
+                    }
+                }
+            }
+            break;
+        case 'B':
+            if(n == 0) {
+                cout << "B";
+            } 
+            else {
+                if(n == 1) {
+                    cout << "C";
+                } 
+                else {
+                    if(n == -1) {
+                        cout << "K";
+                    }
+                }
+            }
+            break;
+    }
+    
+    return 0;
+}

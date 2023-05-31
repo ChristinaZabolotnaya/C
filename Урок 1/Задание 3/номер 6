@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    int n, d, e;
+    
+    cout << "Введите двузначное число: ";
+    cin >> n;
+    
+    d = n / 10;
+    e = n % 10;
+    
+    cout << "Десятки: " << d << endl;
+    cout << "Единицы: " << e << endl;
+    
+    return 0;
+}

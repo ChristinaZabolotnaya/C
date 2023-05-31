@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double a, b, angle, area;
+    
+    cout << "Введите длины оснований трапеции: ";
+    cin >> a >> b;
+    
+    cout << "Введите угол (в градусах) при большем основании: ";
+    cin >> angle;
+    
+    area = ((a + b) / 2) * sin(angle * M_PI / 180);
+    
+    cout << "Площадь трапеции равна " << area << endl;
+    
+    return 0;
+}

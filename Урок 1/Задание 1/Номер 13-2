@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+   double a, x;
+
+   cout << "Введите значение a: ";
+   cin >> a;
+
+   x = 12 * pow(a, 2) + 7 * a - 16;
+
+   cout << "Значение функции x = 12*a^2 + 7*a - 16 равно " << x << endl;
+
+   return 0;
+}

@@ -1,0 +1,43 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+double f(double x, double coeffs[], int n) {
+    double result = 0;
+    for (int k = 0; k <= n; k++) {
+        result += coeffs[k] * pow(x, k);
+    }
+    return result;
+}
+
+double bisectionMethod(double a, double b, double coeffs[], int n) {
+    const int maxIter = 100;
+    const double eps = 1e-8;
+    double c = (a + b) / 2;
+    int iter = 0;
+    while (abs(f(c, coeffs, n)) > eps && iter < maxIter) {
+        if (f(a, coeffs, n) * f(c, coeffs, n) < 0) {
+            b = c;
+        } else {
+            a = c;
+        }
+        c = (a + b) / 2;
+        iter++;
+    }
+    if (iter == maxIter) {
+        cout << "Не удалось найти решение" << endl;
+        return NAN;
+    } else {
+        return c;
+    }
+}
+
+int main() {
+    const int n = 3;
+    double coeffs[n+1] = {1, -4, 6, -4};
+    double a = 2.0, b = 3.0;
+    double root = bisectionMethod(a, b, coeffs, n);
+    cout << "Корень уравнения: " << root << endl;
+    return 0;
+}

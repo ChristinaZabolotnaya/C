@@ -1,0 +1,49 @@
+#include <iostream>
+#include <cmath> 
+
+using namespace std;
+
+int main() {
+
+    int n;
+    double v, R, D, L, S, pi = 3.14;
+    
+    cin >> n >> v;
+    
+    switch(n) {
+        case 1:
+            R = v;
+            D = 2 * R;
+            L = 2 * pi * R;
+            S = pi * R * R;
+            break;
+        case 2:
+            D = v;
+            R = D / 2;
+            L = 2 * pi * R;
+            S = pi * R * R;
+            break;
+        case 3:
+            L = v;
+            R = L / (2 * pi);
+            D = 2 * R;
+            S = pi * R * R;
+            break;
+        case 4:
+            S = v;
+            R = sqrt(S / pi);
+            D = 2 * R;
+            L = 2 * pi * R;
+            break;
+        default:
+            cout << "Некорректно";
+            return 0;
+    }
+    
+    cout << "Радиус - " << R << endl;
+    cout << "Диаметр - " << D << endl;
+    cout << "Длина - " << L << endl;
+    cout << "Площадь - " << S << endl;
+    
+    return 0;
+}

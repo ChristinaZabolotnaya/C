@@ -1,0 +1,38 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    int x, y;
+    cin >> x;
+    
+   double z;
+    switch (x) {
+        case 1:
+            cin >> z;
+            cout << z / 10;
+            break;
+        case 2:
+            cin >> z;
+            cout << z * 1000;
+            break;
+        case 3:
+            cin >> z;
+            cout << z;
+            break;
+        case 4:
+            cin >> z;
+            cout << z / 1000;
+            break;
+        case 5:
+            cin >> z;
+            cout << z / 100;
+            break;
+        default:
+            cout << "ошибка";
+    }
+    
+    return 0;
+}

@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+
+    double a, b, x;
+
+    cout << "Введите значение a: ";
+    cin >> a;
+
+    cout << "Введите значение b: ";
+    cin >> b;
+
+    if (a != 0) {
+        x = -b / a;
+        cout << "x = " << x << endl;
+    } 
+    else {
+        cout << "а не может быть равно нулю" << endl;
+    }
+    
+    return 0;
+}

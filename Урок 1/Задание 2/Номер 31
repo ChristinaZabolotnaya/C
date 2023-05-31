@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double tf, tc;
+    
+    cout << "Введите значение температуры по Фаренгейту: ";
+    cin >> tf;
+    
+    tc = (tf - 32) * 5 / 9;
+    
+    cout << "Значение температуры по Цельсию: " << tc << endl;
+    
+    return 0;
+}
+

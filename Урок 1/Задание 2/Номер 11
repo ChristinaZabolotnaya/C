@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double a, b, sum, diff, prod, quot;
+    
+    cout << "Введите два ненулевых числа: ";
+    cin >> a >> b;
+    
+    sum = abs(a) + abs(b);
+    diff = abs(a) - abs(b);
+    prod = abs(a * b);
+    quot = abs(a) / abs(b);
+    
+    cout << "Сумма модулей: " << sum << endl;
+    cout << "Разность модулей: " << diff << endl;
+    cout << "Произведение модулей: " << prod << endl;
+    cout << "Частное модулей: " << quot << endl;
+    
+    return 0;
+}

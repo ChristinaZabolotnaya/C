@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    int a, b, c, pl, min;
+    cin >> a >> b >> c;
+    
+    pl = 0;
+    min = 0;
+    
+    if (a > 0) {
+        pl++;
+    } else if (a < 0) {
+        min++;
+    }
+    if (b > 0) {
+        pl++;
+    } else if (b < 0) {
+        min++;
+    }
+    if (c > 0) {
+        pl++;
+    } else if (c < 0) {
+        min++;
+    }
+    
+    cout << "Количество положительных чисел: " << pl << endl;
+    cout << "Количество отрицательных чисел: " << min << endl;
+    
+    return 0;
+}

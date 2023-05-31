@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double a, b, geom;
+    
+    cout << "Введите два неотрицательных числа: ";
+    cin >> a >> b;
+    
+    geom = sqrt(a * b);
+    
+    cout << "Среднее геометрическое этих чисел: " << geom << endl;
+    
+    return 0;
+}

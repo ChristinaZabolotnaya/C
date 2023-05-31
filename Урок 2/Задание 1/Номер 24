@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+   
+    double a, b, c, D;
+    cin >> a >> b >> c;
+    
+    D = pow(b, 2) - 4 * a * c;
+    
+    if (D >= 0) { // Квадратное уравнение 4*x^2 + B*x + C = 0) имеет вещественные корни
+        cout << "True";
+    } 
+    
+    else {
+        cout << "False";
+    }
+    
+    return 0;
+}

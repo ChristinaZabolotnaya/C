@@ -1,0 +1,39 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double a;
+    
+    cout << "Введите число: ";
+    cin >> a;
+    
+    double a2 = a * a;
+    double a4 = a2 * a2;
+    double a6 = a4 * a2;
+    double a7 = a6 * a;
+    double a8 = a4 * a4;
+    double a9 = a8 * a;
+    double a10 = a8 * a2;
+    double a13 = a6 * a6 * a * a;
+    double a15 = a6 * a6 * a13;
+    double a21 = a15 * a6;
+    double a28 = a15 * a13;
+    double a64 = a28 * a28 * a8;
+    
+    cout << "a^4 = " << a4 << endl;
+    cout << "a^6 = " << a6 << endl;
+    cout << "a^7 = " << a7 << endl;
+    cout << "a^8 = " << a8 << endl;
+    cout << "a^9 = " << a9 << endl;
+    cout << "a^10 = " << a10 << endl;
+    cout << "a^13 = " << a13 << endl;
+    cout << "a^15 = " << a15 << endl;
+    cout << "a^21 = " << a21 << endl;
+    cout << "a^28 = " << a28 << endl;
+    cout << "a^64 = " << a64 << endl;
+    
+    return 0;
+}

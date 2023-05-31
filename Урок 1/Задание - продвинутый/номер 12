@@ -1,0 +1,37 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double a, m, F0, n;
+    
+    cout << "Введите массу тела кг: ";
+    cin >> m;
+    
+    cout << "Введите угол градусы: ";
+    cin >> a;
+    
+    a = a * M_PI / 180;
+    
+    cout << "Введите силу F0 (Н): ";
+    cin >> F0;
+    
+    cout << "Введите коэффициент трения n: ";
+    cin >> n;
+
+    double g = 9.81; 
+    double Ft = n * m * g * sin(a); 
+    double F = F0 * cos(a) - Ft; 
+    double A = F / m; 
+
+    if (A == 0) {
+        cout << "Тело неподвижно" << endl;
+    } 
+    else {
+        cout << "Ускорение тела: " << A << " м/с^2" << endl;
+    }
+
+    return 0;
+}

@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    int a, b, c;
+    
+    cout << "Введите три целых числа: ";
+    cin >> a >> b >> c;
+    
+    cout << "Перед заменой: a = " << a << ", b = " << b << ", c = " << c << endl;
+    
+    int temp = b;
+    b = a;
+    a = c;
+    c = temp;
+    
+    cout << "После замены: a = " << a << ", b = " << b << ", c = " << c << endl;
+    
+    return 0;
+}

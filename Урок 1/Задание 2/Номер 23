@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double A, B, C;
+    
+    cout << "Введите значения переменных А, В и С: ";
+    cin >> A >> B >> C;
+    
+    double temp = A;
+    A = B;
+    B = C;
+    C = temp;
+    
+    cout << "Новое значение А: " << A << endl;
+    cout << "Новое значение В: " << B << endl;
+    cout << "Новое значение С: " << C << endl;
+    
+    return 0;
+}
+

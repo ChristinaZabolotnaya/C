@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   
+    int a, b, c;
+    cin >> a >> b >> c;
+   
+    if (a == b || a == c || b == c) { // Среди трех данных целых чисел есть хотя бы одна пара совпадающих
+        cout << "True";
+    } 
+    
+    else {
+        cout << "False";
+    }
+    
+    return 0;
+}

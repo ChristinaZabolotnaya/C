@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int doubleFactorial(int n) {
+    int result = 1;
+    for (int i = n; i >= 1; i -= 2) {
+        result *= i;
+    }
+    return result;
+}
+
+int main() {
+    int n;
+    cout << "Введите аргумент функции doubleFactorial: ";
+    cin >> n;
+    cout << n << "!! = " << doubleFactorial(n) << endl;
+    return 0;
+}

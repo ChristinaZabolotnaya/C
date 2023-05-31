@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    const double M = 5.96 * pow(10, 24);
+    const double G = 6.672 * pow(10, -11);
+    const double R = 6.37 * pow(10, 6);
+
+    double h, g;
+    
+    cout << "Введите высоту над поверхностью Земли м: ";
+    cin >> h;
+
+    g = (G * M) / pow((R + h), 2);
+    cout << "Ускорение свободного падения - на высоте " << h << " "<< "м:" << " - "<< g << endl;
+
+    return 0;
+}

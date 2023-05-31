@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    int n, d, e, m;
+    
+    cout << "Введите двузначное число: ";
+    cin >> n;
+    
+    d = n / 10;
+    e = n % 10;
+    m = e * 10 + d;
+    
+    cout << "Число с переставленными цифрами: " << m << endl;
+    
+    return 0;
+}

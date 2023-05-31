@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double a, V, S;
+    
+    cout << "Введите длину ребра куба: ";
+    cin >> a;
+    
+    V = pow(a, 3);
+    S = 6 * pow(a, 2);
+    
+    cout << "Объем куба: " << V << endl;
+    cout << "Площадь поверхности куба: " << S << endl;
+    
+    return 0;
+}

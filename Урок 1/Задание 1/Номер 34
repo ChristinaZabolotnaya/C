@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+   
+    double a, b, sum, diff, mult, div;
+   
+    cout << "Введите первое число: ";
+    cin >> a;
+   
+    cout << "Введите второе число: ";
+    cin >> b;
+   
+    sum = a + b; // сумма
+    diff = a - b; // разность
+    mult = a * b; // произведение
+    div = a / b; // частное
+   
+    cout << "Sum = " << sum << endl;
+    cout << "Difference = " << diff << endl;
+    cout << "Multiplication = " << mult << endl;
+    cout << "Division = " << div << endl;
+   
+    return 0;
+}

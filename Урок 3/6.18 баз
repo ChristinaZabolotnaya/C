@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+    double a, sum = 0;
+    int n = 1;
+    cout << "Введите значение a: ";
+    cin >> a;
+    while (sum <= a) {
+        sum += 1.0/n;
+        n++;
+    }
+    cout << "Наименьшее значение n: " << n-1 << endl;
+    return 0;
+}

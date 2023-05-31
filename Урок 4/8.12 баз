@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main() {
+    const int n = 15;
+    double scores[n][3], total_sum = 0, mandatory_sum = 0, short_sum = 0, free_sum = 0;
+    for (int i = 0; i < n; i++) {
+        cout << "Введите баллы спортсмена " << i+1 << " за обязательную, короткую и произвольную программы: ";
+        for (int j = 0; j < 3; j++) {
+            cin >> scores[i][j];
+        }
+    }
+    for (int i = 0; i < n; i++) {
+        double sum = 0;
+        for (int j = 0; j < 3; j++) {
+            sum += scores[i][j];
+            total_sum += scores[i][j];
+            if (j == 0) {
+                mandatory_sum += scores[i][j];
+            } else if (j == 1) {
+                short_sum += scores[i][j];
+            } else {
+                free_sum += scores[i][j];
+            }
+        }
+        cout << "Среднее количество баллов для спортсмена " << i+1 << ": " << sum/3 << endl;
+    }
+    cout << "Среднее количество баллов за обязательную программу: " << mandatory_sum/n << endl;
+    cout << "Среднее количество баллов за короткую программу: " << short_sum/n << endl;
+    cout << "Среднее количество баллов за произвольную программу: " << free_sum/n << endl;
+    return 0;
+}

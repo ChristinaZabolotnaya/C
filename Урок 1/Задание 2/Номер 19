@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double x1, y1, x2, y2, perimeter, area, width, height;
+    
+    cout << "Введите координаты двух противоположных вершин прямоугольника: ";
+    cin >> x1 >> y1 >> x2 >> y2;
+    
+    width = abs(x2 - x1);
+    height = abs(y2 - y1);
+    perimeter = 2 * (width + height);
+    area = width * height;
+    
+    cout << "Периметр прямоугольника: " << perimeter << endl;
+    cout << "Площадь прямоугольника: " << area << endl;
+    
+    return 0;
+}

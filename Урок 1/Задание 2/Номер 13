@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double R1, R2, S1, S2, S3;
+    const double pi = 3.14;
+    
+    cout << "Введите радиусы двух кругов (R1 > R2): ";
+    cin >> R1 >> R2;
+    
+    S1 = pi * pow(R1, 2);
+    S2 = pi * pow(R2, 2);
+    S3 = S1 - S2;
+    
+    cout << "Площадь первого круга: " << S1 << endl;
+    cout << "Площадь второго круга: " << S2 << endl;
+    cout << "Площадь кольца: " << S3 << endl;
+    
+    return 0;
+}

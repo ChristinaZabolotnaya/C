@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+   double x, y, a;
+
+   cout << "Введите значение x: ";
+   cin >> x;
+
+   a = 3.2 + sqrt(1 + x);
+   y = sin(a / abs(5 * x));
+
+   cout << "Значение функции y = sin((3,2+sqrt(1+x))/модуль(5x)) равно " << y << endl;
+
+   return 0;
+}

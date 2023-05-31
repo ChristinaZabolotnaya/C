@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+
+    double volume, mass, density;
+
+    cout << "Введите значение volume: ";
+    cin >> volume;
+
+    cout << "Введите значение mass: ";
+    cin >> mass;
+
+    density = mass / volume;
+
+    cout << "Density = " << density << endl;
+
+    return 0;
+}

@@ -1,0 +1,40 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+double f(double x, double a[], int n) {
+    double result = 0;
+    for (int k = -1; k <= n; k++) {
+        result += a[k+1] * pow(x, 2*k+1);
+    }
+    return result;
+}
+
+double df(double x, double a[], int n) {
+    double result = 0;
+    for (int k = -1; k <= n; k++) {
+        result += (2*k+1) * a[k+1] * pow(x, 2*k);
+    }
+    return result;
+}
+
+int main() {
+    int n;
+    cout << "Введите порядок полинома: ";
+    cin >> n;
+    double a[n+2], x0, eps;
+    cout << "Введите коэффициенты полинома: ";
+    for (int k = -1; k <= n; k++) {
+        cin >> a[k+1];
+    }
+    cout << "Введите начальную точку: ";
+    cin >> x0;
+    cout << "Введите точность: ";
+    cin >> eps;
+    double x = x0, delta;
+    do {
+        delta = f(x, a, n) / df(x, a, n);
+        x -= delta;
+    } while (abs(delta) > eps);
+    cout << "Корень уравнения: " << x << endl;
+    return 0;
+}

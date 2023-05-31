@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double R, L, S;
+    const double pi = 3.14;
+    
+    cout << "Введите радиус круга: ";
+    cin >> R;
+    
+    L = 2 * pi * R;
+    S = pi * pow(R, 2);
+    
+    cout << "Длина окружности: " << L << endl;
+    cout << "Площадь круга: " << S << endl;
+    
+    return 0;
+}

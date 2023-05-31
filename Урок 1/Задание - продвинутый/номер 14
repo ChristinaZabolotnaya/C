@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double m, a, n, Ft;
+    double g = 9.81;
+    
+    n = 0,19;
+    
+    cout << "Введите массу тела m - кг: ";
+    cin >> m;
+    
+    cout << "Введите угол наклона плоскости a - градусы: ";
+    cin >> a;
+    
+    a = a * M_PI / 180;
+
+    if (tan(a) < n) {
+        Ft = m *g * sin(a);
+    } 
+    else {
+        n * m * g * cos(a);
+    }
+    
+    cout << "Сила трения: " << Ft << " Н" << endl;
+
+    return 0;
+}

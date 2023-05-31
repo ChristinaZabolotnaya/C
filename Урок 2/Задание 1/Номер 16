@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   
+    int n;
+    cin >> n;
+   
+    if (n % 2 == 0 && n > 9 && n < 100) { // Данное число является четным двузначным
+        cout << "True";
+    } 
+    
+    else {
+        cout << "False";
+    }
+    
+    return 0;
+}

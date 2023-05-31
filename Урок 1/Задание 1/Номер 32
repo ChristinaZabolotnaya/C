@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    double a, b, arith_mean, geom_mean;
+    
+    cout << "Введите значение первого числа: ";
+    cin >> a;
+    
+    cout << "Введите значение второго числа: ";
+    cin >> b;
+    
+    arith_mean = (abs(a) + abs(b)) / 2; // среднее арифметическое модулей
+    geom_mean = sqrt(abs(a) * abs(b)); // среднее геометрическое модулей
+    
+    cout << "среднее арифметическое = " << arith_mean << endl;
+    cout << "Среднее геометрическое = " << geom_mean << endl;
+    
+    return 0;
+}

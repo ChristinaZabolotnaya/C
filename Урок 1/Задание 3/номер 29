@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    int A, B, C, numSquares, areaLeft;
+    
+    cout << "Введите размеры прямоугольника и размер квадрата: ";
+    cin >> A >> B >> C;
+    
+    numSquares = (A / C) * (B / C);
+    areaLeft = A * B - numSquares * C * C;
+    
+    cout << "Количество квадратов: " << numSquares << endl;
+    cout << "Площадь незанятой части: " << areaLeft << endl;
+    
+    return 0;
+}

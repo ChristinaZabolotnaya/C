@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+   double height, R, distance;
+
+   R = 6350; 
+
+   cout << "Введите значение высоты над Землей: ";
+   cin >> height;
+
+   distance = sqrt(pow(R + height, 2) - pow(R, 2));
+
+   cout << "Расстояние до линии горизонта равно " << distance << endl;
+
+   return 0;
+}

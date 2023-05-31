@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+double angleBetweenVectors(double a[], double b[], int n) {
+    double dotProduct = 0, normA = 0, normB = 0;
+    for (int i = 0; i < n; i++) {
+        dotProduct += a[i] * b[i];
+        normA += pow(a[i], 2);
+        normB += pow(b[i], 2);
+    }
+    normA = sqrt(normA);
+    normB = sqrt(normB);
+    double cosA = dotProduct / (normA * normB);
+    return acos(cosA) * 180 / M_PI;
+}
+
+int main() {
+    const int n = 3;
+    double a[n], b[n];
+    cout << "Введите координаты вектора a: ";
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+    cout << "Введите координаты вектора b: ";
+    for (int i = 0; i < n; i++) {
+        cin >> b[i];
+    }
+    cout << "Угол между векторами a и b: " << angleBetweenVectors(a, b, n) << " градусов" << endl;
+    return 0;
+}

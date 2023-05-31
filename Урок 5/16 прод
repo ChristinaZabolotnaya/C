@@ -1,0 +1,46 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+double f(double x, double coeffs[], int n) {
+    double result = 0;
+    for (int k = 0; k <= n; k++) {
+        result += coeffs[k] * pow(x, k);
+    }
+    return result;
+}
+
+double df(double x, double coeffs[], int n) {
+    double result = 0;
+    for (int k = 1; k <= n; k++) {
+        result += k * coeffs[k] * pow(x, k-1);
+    }
+    return result;
+}
+
+double newtonMethod(double x0, double coeffs[], int n) {
+    const int maxIter = 100;
+    const double eps = 1e-8;
+    double x = x0;
+    int iter = 0;
+    while (abs(f(x, coeffs, n)) > eps && iter < maxIter) {
+        x = x - f(x, coeffs, n) / df(x, coeffs, n);
+        iter++;
+    }
+    if (iter == maxIter) {
+        cout << "Не удалось найти решение" << endl;
+        return NAN;
+    } else {
+        return x;
+    }
+}
+
+int main() {
+    const int n = 3;
+    double coeffs[n+1] = {1, -4, 6, -4};
+    double x0 = 2.5;
+    double root = newtonMethod(x0, coeffs, n);
+    cout << "Корень уравнения: " << root << endl;
+    return 0;
+}

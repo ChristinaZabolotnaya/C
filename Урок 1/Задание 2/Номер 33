@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double x, a, y, price;
+    cout << "Введите стоимость " << endl;
+    cout << "x кг конфет: ";
+    cin >> a;
+    cout << "y кг конфет: ";
+    cin >> y;
+    x = 1;
+    price = a * x; // цена за 1 кг
+    cout << "Цена за 1 кг конфет: " << price << endl;
+    price = price * y; // цена за y кг
+    cout << "Цена за " << y << " кг конфет: " << price << endl;
+    return 0;
+}

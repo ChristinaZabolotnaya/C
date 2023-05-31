@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+
+    double S, D, L;
+    const double pi = 3.14;
+
+    cout << "Введите площадь круга: ";
+    cin >> S;
+
+    D = sqrt((4 * S) / pi);
+    L = pi * D;
+
+    cout << "Диаметр круга: " << D << endl;
+    cout << "Длина окружности: " << L << endl;
+
+    return 0;
+}

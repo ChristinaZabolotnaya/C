@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   
+    int a, b, c, count;
+    cin >> a >> b >> c;
+    count = 0;
+    
+    // Ровно два из чисел A, B, C являются положительными
+    
+    if (a > 0) {
+        count++;
+    }
+    if (b > 0) {
+        count++;
+    }
+    if (c > 0) {
+        count++;
+    }
+    
+    if (count == 2) {
+        cout << "True";
+    } 
+    
+    else {
+        cout << "False";
+    }
+    
+    return 0;
+}

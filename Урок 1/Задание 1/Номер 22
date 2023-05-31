@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+   
+    int a, b;
+    double average_arithmetic, average_geometric;
+   
+    cout << "Введите значение a: ";
+    cin >> a;
+   
+    cout << "Введите значение b: ";
+    cin >> b;
+   
+    average_arithmetic = (a + b) / 2.0;
+    average_geometric = sqrt(a * b);
+   
+    cout << "Average arithmetic = " << average_arithmetic << endl;
+    cout << "Average geometric = " << average_geometric << endl;
+   
+    return 0;
+}

@@ -1,0 +1,62 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+
+    int age, ones, tens;
+    cin >> age;
+    
+    ones = age % 10;
+    tens = age / 10;
+    
+    switch(tens) {
+        case 2:
+            cout << "двадцать лет ";
+            break;
+        case 3:
+            cout << "тридцать лет ";
+            break;
+        case 4:
+            cout << "сорок лет ";
+            break;
+        case 5:
+            cout << "пятьдесят лет ";
+            break;
+        case 6:
+            cout << "шестьдесят лет ";
+            break;
+    }
+    
+    switch(ones) {
+        case 1:
+            cout << "один год" << endl;
+            break;
+        case 2:
+            cout << "два года" << endl;
+            break;
+        case 3:
+            cout << "три года" << endl;
+            break;
+        case 4:
+            cout << "четыре года" << endl;
+            break;
+        case 5:
+            cout << "пять лет" << endl;
+            break;
+        case 6:
+            cout << "шесть лет" << endl;
+            break;
+        case 7:
+            cout << "семь лет" << endl;
+            break;
+        case 8:
+            cout << "восемь лет" << endl;
+            break;
+        case 9:
+            cout << "девять лет" << endl;
+            break;
+    }
+    return 0;
+}

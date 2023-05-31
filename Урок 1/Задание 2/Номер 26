@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double x, y;
+    
+    cout << "Введите значение х: ";
+    cin >> x;
+    
+    y = 4 * pow(x - 3, 6) - 7 * pow(x - 3, 3) + 2;
+    
+    cout << "Значение функции: " << y << endl;
+    
+    return 0;
+}

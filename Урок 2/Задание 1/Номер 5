@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   
+    int a, b;
+    cin >> a >> b;
+    
+    if (a >= 0 || b < -2) { // Справедливы неравенства A > 0 или В ≤ -2
+        cout << "True";
+    } 
+    
+    else {
+        cout << "False";
+    }
+    
+    return 0;
+}

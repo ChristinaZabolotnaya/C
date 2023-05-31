@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    int a, b;
+    
+    cout << "Введите два целых числа: ";
+    cin >> a >> b;
+    
+    cout << "Перед заменой: a = " << a << ", b = " << b << endl;
+    
+    int temp = a;
+    a = b;
+    b = temp;
+    
+    cout << "После замены: a = " << a << ", b = " << b << endl;
+    
+    return 0;
+}

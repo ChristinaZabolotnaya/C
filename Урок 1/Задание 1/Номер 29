@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    
+    double a, b, h, perimeter;
+    
+    cout << "Введите значение основания a: ";
+    cin >> a;
+    
+    cout << "Введите значение основания b: ";
+    cin >> b;
+    
+    cout << "Введите значение высоты h: ";
+    cin >> h;
+    
+    double c = sqrt(pow((a-b)/2, 2) + pow(h, 2)); // вычисляем боковую сторону
+    perimeter = a + b + 2*c; 
+    
+    cout << "Perimeter = " << perimeter << endl;
+    
+    return 0;
+}

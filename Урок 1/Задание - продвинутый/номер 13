@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double m, a, A;
+    double g = 9.81;
+    
+    cout << "Введите массу тела m - кг: ";
+    cin >> m;
+    
+    cout << "Введите угол наклона плоскости a - градусы: ";
+    cin >> a;
+    
+    a = a * M_PI / 180;
+    
+    cout << "Введите ускорение тела A - м/с^2: ";
+    cin >> A;
+
+    double n = (g * sin(a) - A) / (g * cos(a)); 
+
+    cout << "Коэффициент трения n: " << n << endl;
+
+    return 0;
+}

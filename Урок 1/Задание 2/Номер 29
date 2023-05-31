@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    double a, radians;
+    
+    const double pi = 3.14;
+    
+    cout << "Введите значение угла в градусах: ";
+    cin >> a;
+    
+    radians = a * pi / 180;
+    
+    cout << "Значение угла в радианах: " << radians << endl;
+    
+    return 0;
+}

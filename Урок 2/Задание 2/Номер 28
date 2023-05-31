@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+    int y, d;
+    cin >> y;
+    
+    if (y % 4 == 0 && (y % 100 != 0 || y % 400 == 0)) {
+        d = 366;
+    } 
+    
+    else {
+        d = 365;
+    }
+    
+    cout << d;
+    
+    return 0;
+}
